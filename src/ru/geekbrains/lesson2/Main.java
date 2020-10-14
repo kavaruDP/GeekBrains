@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         //Проверка задания 4
-        create2DArray(5,5);
+        create2DArray(3);
         //Проверка задания 5
         findMinMaxIn1DArray();
         //Проверка задания 6
@@ -70,19 +70,22 @@ public class Main {
     // Задание 4
     //Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое),
     // и с помощью цикла(-ов) заполнить его диагональные элементы единицами;
-    static void create2DArray(int a, int b) {
-        int[][] arr = new int[a][b];
-        for (int i=0; i< a; i++) {
-            for (int j = 0; j < b; j++) {
+    static void create2DArray(int n) {
+        int[][] arr = new int[n][n];
+        for (int i=0; i< n; i++) {
+            for (int j = 0; j < n; j++) {
                 if (j == i) {
+                    arr[i][j] = 1;
+                }
+                if ((n-j-1) == i) {
                     arr[i][j] = 1;
                 }
             }
         }
         // проверка
-        for (int i=0; i< a; i++) {
+        for (int i=0; i< n; i++) {
             System.out.print("строка " + i + ": ");
-            for (int j = 0; j < b; j++) {
+            for (int j = 0; j < n; j++) {
                 System.out.print(arr[i][j]);
             }
             System.out.print("\n");
