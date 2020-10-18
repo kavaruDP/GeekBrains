@@ -1,21 +1,21 @@
 package ru.geekbrains.lesson2;
 
 public class Cat extends Animal {
-    private float runLimit;
-    private float jumpLimit;
+    protected float runLimit;
+    protected float jumpLimit;
     private String name;
     private int appetite;
     private boolean fullness;
 
     //конструктор для прыгающих и бегающих котов
-    public Cat(float distance,int age) {
-        super(distance);
+    public Cat(int age) {
+        super(age);
         initCatLimit(age);
     }
 
     //конструктор для кормлящихся котов
-    public Cat(float distance, String name, int appetite) {
-        super(distance);
+    public Cat(int age, String name, int appetite) {
+        super(age);
         this.name = name;
         this.appetite = appetite;
         this.fullness = false;
@@ -55,11 +55,11 @@ public class Cat extends Animal {
 
     @Override
     public void run(float distance) {
-        System.out.println("result sweem: " + (distance < runLimit));
+        System.out.println("result run: " + (distance < runLimit));
     }
 
     @Override
     public void jump(float distance) {
-        System.out.println("result sweem: " + (distance < jumpLimit));
+        System.out.println("result jump: " + (distance < jumpLimit));
     }
 }

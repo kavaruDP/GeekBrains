@@ -1,9 +1,9 @@
 package ru.geekbrains.lesson2;
 
 public class Dog extends Animal {
-    private  float sweemLimit;
-    private  float runLimit;
-    private  float jumpLimit;
+    protected float sweemLimit;
+    protected  float runLimit;
+    protected  float jumpLimit;
 
     public Dog(int age) {
         super(age);
