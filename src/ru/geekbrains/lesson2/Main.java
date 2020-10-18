@@ -4,24 +4,25 @@ public class Main {
 
     public static void main(String[] args) {
         //Проверка задания 4
-        create2DArray(3);
+            //create2DArray(3);
         //Проверка задания 5
-        findMinMaxIn1DArray();
+            //findMinMaxIn1DArray();
         //Проверка задания 6
-        int[] myArr1 = {2, 2, 2, 1, 2, 2, 10, 1};
-        System.out.println(isBalanceTrue(myArr1));
+            //int[] myArr1 = {2, 2, 2, 1, 2, 2, 10, 1};
+            //System.out.println(isBalanceTrue(myArr1));
         //Проверка задания 7
-        int[] myArr2 = {1, 2, 3, 4, 5};
-        int n = -3;
-        shiftElements(myArr2,n);
+            //int[] myArr2 = {1, 2, 3, 4, 5};
+            //int n = -3;
+            //shiftElements(myArr2,n);
     }
-    // Вспомогательный метод для печати 1D массива в одну строку
+    // ДЗ 2: Вспомогательный метод для печати 1D массива в одну строку
     static void printArr(int[] arr) {
         for (int j : arr) {
             System.out.print(j + " ");
         }
     }
-    // Начало ДЗ
+
+    // Начало ДЗ2
     // Задание 1
     // Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
     // С помощью цикла и условия заменить 0 на 1, 1 на 0;
