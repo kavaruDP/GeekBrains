@@ -3,9 +3,10 @@ package ru.geekbrains.lesson2;
 public abstract class  Animal {
     //protected  int age;
     public float currentVal;
+    public int age;
 
-    public  Animal(float currentVal) {
-        this.currentVal = currentVal;
+    public  Animal(int age) {
+        this.age = age;
     }
     public  void sweem(float currentVal) {
         System.out.println("result sweem: " + currentVal );
