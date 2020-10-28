@@ -49,6 +49,7 @@ public class Lesson4 {
 
         public static boolean checkWin(char symb) {
             int count = 1;
+            //горизонталь
             for (int i=0; i<SIZE; i++) {
                 for (int j=0; j<SIZE-1; j++) {
                     if (map[i][j] == symb && map[i][j] == map[i][j+1]) {
